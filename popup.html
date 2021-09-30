@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Water</title>
+
+    <link rel="stylesheet" href="packages/bootstrap/bootstrap.min.css" />
+    <script src="packages/bootstrap/bootstrap.min.js"></script>
+  </head>
+  <body style="width: 250px; height: 100px">
+    <div class="container">
+      <div>
+        <label for="interval" class="form-label">Interval:</label>
+        <input
+          type="range"
+          class="form-range"
+          min="0"
+          max="60"
+          step="1"
+          id="interval"
+        />
+      </div>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          role="progressbar"
+          aria-valuenow="75"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 75%"
+        ></div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
